@@ -42,5 +42,12 @@ namespace RegularExpression
 
             Checker(phoneNumbers, pattern);
         }
+
+        public static void PasswordValidator(string[] password)
+        {
+            string pattern = "^[a-zA-Z0-9!#$^&*_`~.-]{8}$"; // UC5 Password with atleast 8 characters
+
+            Checker(password, pattern);
+        }
     }
 }
