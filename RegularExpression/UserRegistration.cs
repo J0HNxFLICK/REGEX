@@ -25,6 +25,16 @@
             Console.Write("\n");
             REGEXcore.UserNameValidation(lastName); // UC2 Last name validation
             Console.Write("\n\n");
+
+            string[] email = { "abc.xyz@bl.co", "abc.xyz@bl.co.in", "abc.x@bl.co.in","ac.hahaha@bl.co.in", "gagaga@gmail.com", "dog.cat@bl.co.in"};
+            Console.WriteLine("Email inputs are ass follows : ");
+            foreach (string p in email)
+            {
+                Console.Write(p+ ", ");
+            }
+            Console.Write("\n");
+            REGEXcore.EmailValidation(email);
+            Console.Write("\n\n");
         }
     }
 }

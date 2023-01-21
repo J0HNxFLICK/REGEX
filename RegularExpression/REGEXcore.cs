@@ -9,19 +9,31 @@ namespace RegularExpression
 {
     internal class REGEXcore
     {
-        public static void UserNameValidation(string[] username) 
+        private static void Checker(string[] values, string pattern)
         {
-            string pattern = "^[A-Z]{1}[a-zA-Z]{2,}$";
 
-            foreach (string s in username)
+            foreach (string s in values)
             {
                 if (Regex.IsMatch(s, pattern))
                 {
-                    Console.WriteLine("\n{0} is valid format." , s);
+                    Console.WriteLine("\n{0} is valid format.", s);
                 }
                 else
                     Console.WriteLine("\n{0} is not a valid format.", s);
             }
+        }
+        public static void UserNameValidation(string[] username) 
+        {
+            string pattern = "^[A-Z][a-zA-Z]{2,}$";
+
+            Checker(username, pattern);
+        }
+
+        public static void EmailValidation(string[] email)
+        {
+            string pattern = @"^abc\.[a-z]*@bl\.co(\.in)?$"; // UC2 pattern to check example wise
+
+            Checker(email, pattern);
         }
     }
 }
