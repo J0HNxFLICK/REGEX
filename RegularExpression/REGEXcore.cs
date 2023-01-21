@@ -35,5 +35,12 @@ namespace RegularExpression
 
             Checker(email, pattern);
         }
+
+        public static void PhoneNumberVerification(string[] phoneNumbers)
+        {
+            string pattern = "^(91)[ ][0-9]{10}$";
+
+            Checker(phoneNumbers, pattern);
+        }
     }
 }

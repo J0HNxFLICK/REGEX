@@ -35,6 +35,16 @@
             Console.Write("\n");
             REGEXcore.EmailValidation(email);
             Console.Write("\n\n");
+
+            string[] phoneNumbers = { "91 6578235489", "915789341587", "2145698755", "6541247893124", "5465221" };
+            Console.WriteLine("Phone number inputs are as following :");
+            foreach (string e in phoneNumbers)
+            {
+                Console.Write(e+ ", ");
+            }
+            Console.Write("\n");
+            REGEXcore.PhoneNumberVerification(phoneNumbers); // UC4 Phone number validation
+            Console.Write("\n\n");
         }
     }
 }
