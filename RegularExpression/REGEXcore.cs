@@ -47,7 +47,9 @@ namespace RegularExpression
         {
             //string pattern = "^[a-zA-Z0-9!#$^&*_`~.-]{8}$"; // UC5 Password with atleast 8 characters 
 
-            string pattern = @"^(?=.+[A-Z])[a-zA-Z0-9\W]{8,}$"; // UC6 Password with minimum 1 capital letter
+            //string pattern = @"^(?=.+[A-Z])[a-zA-Z0-9\W]{8,}$"; // UC6 Password with minimum 1 capital letter
+
+            string pattern = @"^(?=.+[A-Z])(?=.+[0-9])[a-zA-Z0-9\W]{8,}$";
 
             Checker(password, pattern);
         }
