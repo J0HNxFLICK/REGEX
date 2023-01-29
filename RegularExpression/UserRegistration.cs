@@ -38,7 +38,7 @@
             REGEXcore.PhoneNumberVerification(phoneNumbers); // UC4 Phone number validation
             Console.Write("\n\n");
 
-            string[] passwords = { "ahey$^*6", "alkjsdaaaakwj", "_-.!*$#-" };
+            string[] passwords = { "ahey$^*6", "alkjSdaaaakwj", "Wwel95/*" };
             Console.WriteLine("Password inputs are :");
             Printer(passwords);
             REGEXcore.PasswordValidator(passwords);
