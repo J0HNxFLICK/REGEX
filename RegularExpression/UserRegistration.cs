@@ -26,7 +26,13 @@
             REGEXcore.UserNameValidation(lastName); // UC2 Last name validation
             Console.Write("\n\n");
 
-            string[] email = { "abc.xyz@bl.co", "abc.xyz@bl.co.in", "abc.x@bl.co.in","ac.hahaha@bl.co.in", "gagaga@gmail.com", "dog.cat@bl.co.in"};
+            //string[] email = { "abc.xyz@bl.co", "abc.xyz@bl.co.in", "abc.x@bl.co.in","ac.hahaha@bl.co.in", "gagaga@gmail.com", "dog.cat@bl.co.in"};
+            
+            //UC9 Samples
+            string[] email = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", 
+                "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "100@gmail.com", 
+            "abc@.com.my", "abc123@gmail.a", "abc123@.com.com"};
+
             Console.WriteLine("Email inputs are ass follows : ");
             Printer(email);
             REGEXcore.EmailValidation(email);

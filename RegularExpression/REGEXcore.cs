@@ -31,7 +31,9 @@ namespace RegularExpression
 
         public static void EmailValidation(string[] email)
         {
-            string pattern = @"^abc\.[a-z]*@bl\.co(\.in)?$"; // UC2 pattern to check example wise
+            //string pattern = @"^abc\.[a-z]*@bl\.co(\.in)?$"; // UC2 pattern to check example wise
+
+            string pattern = "^[a-zA-Z0-9]{2,}[.+-]{0,1}[a-zA-Z0-9.+-]*@[a-z]{3,5}.[a-z]{2,3}(.[a-z]{2,3}){0,1}$"; // UC9 Validate given emails
 
             Checker(email, pattern);
         }
